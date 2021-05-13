@@ -10,6 +10,6 @@ This repository contains my solutions to the course's projects. All projects her
 
 * [Project 2: Commerce](Project%202/commerce/) - [problem description](https://cs50.harvard.edu/web/2020/projects/2/commerce/)
 
-* [Project 3: Optimization](Project%203/crossword/) - [problem description](https://cs50.harvard.edu/ai/2020/projects/3/crossword/)
+* [Project 3: Mail](Project%203/mail/) - [problem description](https://cs50.harvard.edu/web/2020/projects/3/mail/)
 
 * Project 4: Network - [problem description](https://cs50.harvard.edu/web/2020/projects/4/network/)
