@@ -1,0 +1,260 @@
+html {
+    font-size: small;
+    font-family: Arial, sans-serif;
+}
+
+.pagelink {
+    text-align: right;
+    margin-top: 3.5vh;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin-right: 3vw;
+}
+
+a:hover {
+    color: rgb(94, 94, 94);
+    text-decoration: underline;
+}
+
+#pagelink2 {
+    margin-right: 17px;
+}
+
+a.adv {
+    position: relative;
+    right: 8px;
+    top: 3px;
+}
+
+p.logo {
+    font-size: 82px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-top: 99px;
+    margin-bottom: 14px;
+}
+
+.pagelink.adv {
+    background-color: rgb(241, 241, 241);
+    margin: -8px;
+    margin-bottom: 0;
+    padding-bottom: 19px;
+}
+
+#advlogo {
+    font-size: 27px;
+    display: inline;
+    position: relative;
+    right: 1085px;
+    top: 8px;
+}
+
+span.advlogo {
+    margin: -3px;
+}
+
+#advtext {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: rgb(221, 55, 55);
+    padding: 25px 36px;
+    border-bottom: 2px solid rgb(241, 241, 241); 
+    margin-bottom: 45px;
+}
+
+#imgtext {
+    font-size: medium;
+    position: relative;
+    left: 719px;
+    bottom: 153px;
+}
+
+span {
+    margin: -10px;
+}
+
+.blue {
+    color: #4285F4;
+}
+
+.red {
+    color: #DB4437;
+}
+
+.yellow {
+    color: #F4B400;
+}
+
+.green {
+    color: #0F9D58;
+}
+
+form {
+    display: inline;
+}
+
+.searchforms {
+    text-align: center;
+}
+
+.searchbar {
+    border: 0.2px solid rgb(173, 173, 175);
+    border-radius: 24px;
+    font-size: medium;
+    margin: 3px;
+    height: 42px;
+    width: 538px;
+    padding-left: 44px;
+    background-image: url('searchicon.png');
+    background-size: 21px 21px;
+    background-position: 12px 10.5px;
+    background-repeat: no-repeat;
+}
+
+.searchbar:hover, .searchbar:focus {
+    border-radius: 28px;
+    box-shadow: 1px 1px 7px rgb(207, 207, 207);
+    margin: 2px;
+    height: 44px;
+    width: 540px;
+    outline: none;
+}
+
+#advsearch {
+    margin-left: 37px;
+}
+
+#row1-col1, #row1-col2 {
+    display: inline;
+}
+
+#row1-col1 {
+    font-size: 16px;
+    color: rgb(49, 49, 49);
+}
+
+#row1-col2 {
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    position: relative;
+    left: 628px;
+    bottom: 1px;
+}
+
+.advlabel {
+    float: left;
+    width: 182px;
+    margin-top: 11px;
+    color: rgb(27, 27, 27);
+}
+
+.advinput {
+    float: left;
+    width: 561px;
+    padding: 6px 0px 6px 8px;
+    margin: 3px 0px 12px;
+    border: 1px solid rgb(212, 212, 212);
+    border-top: 1px solid rgb(192, 192, 192);
+    border-radius: 1px;
+}
+
+.advinput:focus {
+    border: 1px solid #4285F4;
+    box-shadow: 0px 1px 3px rgb(177, 177, 177) inset;
+    outline: none;
+}
+
+.column2 {
+    float: right;
+    width: 458px;
+    margin-top: 10px;
+    font-size: 11px;
+    color: rgb(83, 83, 83);
+}
+.example {
+    display: inline;
+    font-family: monospace;
+}
+
+#lastrow {
+    margin-top: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.searchbutton {
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 4px;
+    height: 36px;
+    width: 128px;
+    padding-top: 3px;
+    margin-top: 26px;
+    margin-right: 8px;
+    background-color: rgb(242, 242, 242);
+    color: rgb(78, 78, 78);
+}
+
+.searchbutton:hover {
+    border: 1px solid rgb(202, 202, 202);
+    color: black;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0px 2px 10px 2px rgb(252, 252, 252) inset;
+}
+
+.searchbutton:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 1px #4285F4;
+    height: 34px;
+    width: 126px;
+    margin-top: 27px;
+    margin-right: 9px;
+}
+
+.searchbutton.lucky {
+    width: 142px;
+}
+
+.searchbutton.lucky:focus {
+    width: 140px;
+}
+
+.searchbutton.image {
+    width: 168px;
+    margin-right: 0;
+}
+
+.searchbutton.image:focus {
+    width: 166px;
+}
+
+input[value="Advanced Search"] {
+    border: 1px solid #3b7eeb;
+    border-radius: 2px;
+    padding: 8px 14px;
+    margin: 12px 0px 0px 630px;
+    background-color: #4285F4;
+    color: white;
+    box-shadow: 0px 3px 6px 1px #5b96f5 inset;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+input[value="Advanced Search"]:hover {
+    border: 1px solid #195fcf;
+    box-shadow: -1px 0px 2px 1px #397ff0 inset;
+    outline: none;
+}
+
+input[value="Advanced Search"]:focus {
+    outline: #062d6b solid 1.5px;
+    border: 1px solid white;
+}

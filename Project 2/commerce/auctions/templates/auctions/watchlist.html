@@ -1,0 +1,24 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Watchlist</h2>
+    {% if not watchlist %}
+        <p class="noItems">You have not added any listings to your watchlist.</p>
+    {% endif %}
+    {% for listing in watchlist %}
+        <div class="listing">
+            {% if listing.image %}
+                <img class="list" src="{{ listing.image.url }}" alt="{{ listing.name }}">
+            {% endif %}
+            <h4><a class="title" href="{% url 'listing_page' listing.pk %}">{{ listing.name }}</a></h4>
+            <div><strong>Price: </strong>${{ listing.current_price  }}</div>
+            {% if listing.category != 'N' %}
+                <div>{{ listing.get_category_display }}</div>
+            {% endif %}
+            <p class="description">{{ listing.description }}</p>
+            {% if listing.closed %}
+                <p class="closed">This listing is CLOSED.</p>
+            {% endif %}
+        </div>      
+    {% endfor %}
+{% endblock %}

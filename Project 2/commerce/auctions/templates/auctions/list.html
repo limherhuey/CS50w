@@ -1,0 +1,15 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Create New Listing</h2>
+    <form action="{% url 'list' %}" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="formField">
+                <label class="fieldlabel" for="{{ field.auto_id }}">{{ field.label }}:</label>
+                {{ field }}
+            </div>
+        {% endfor %}
+        <input id="listbutton" type="submit" value="List">
+    </form>
+{% endblock %}

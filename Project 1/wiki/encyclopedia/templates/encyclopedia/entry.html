@@ -1,0 +1,27 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {% if content %}
+        {{ title }}
+    {% else %}
+        Error
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    {% if content %}
+        {% autoescape off %}
+            {{ content }}
+        {% endautoescape %}
+
+        <form action="{% url 'edit' %}" method="get">
+            {% csrf_token %}
+            <input type="hidden" name="title" value="{{ title }}">
+            <input type="submit" value="Edit">
+        </form>
+    {% else %}
+        <h1>Error: Page Not Found</h1>
+
+        <p>Apologies, the page you requested for was not found.</p>
+    {% endif %}
+{% endblock %}

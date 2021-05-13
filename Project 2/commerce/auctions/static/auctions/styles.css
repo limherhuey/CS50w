@@ -1,0 +1,149 @@
+body {
+    padding: 20px;
+}
+
+.listing {
+    border: 1px dotted rgb(1, 60, 107);
+    margin: 28px 10px;
+    padding: 30px 150px 30px 20px;
+}
+
+img.list {
+    height: 12%;
+    width: 12%;
+    float: right;  
+    padding: 10px; 
+}
+
+.text {
+    width: 650px;
+}
+
+.title {
+    color: rgb(112, 14, 112);
+}
+
+.title:hover {
+    color: rgb(75, 4, 75);
+    text-decoration: none;
+}
+
+#info {
+    color: rgb(53, 53, 53);
+    font-style: italic;
+    margin-bottom: 14px;
+}
+
+.description {
+    color: rgb(133, 133, 133);
+    padding-top: 20px;
+}
+
+.closed {
+    color: rgb(156, 91, 6);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    top: 16px;
+}
+
+#winner {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    position: static;
+}
+
+.noItems {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+input[type="submit"] {
+    margin-top: 33px;
+    padding: 2px 20px;
+    background-color: rgb(169, 210, 248);
+    color: rgb(28, 5, 83);
+    border: 0.5px solid rgb(35, 14, 131);
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(152, 204, 252);
+}
+
+#listbutton {
+    position: relative;
+    right: 110px;
+}
+
+.formField {
+    margin-top: 30px;
+}
+
+.fieldlabel {
+    float: left;
+    width: 110px;
+}
+
+.field {
+    border: 0.5px solid black;
+    border-radius: 2px;
+}
+
+img.page {
+    height: 23%;
+    width: 23%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 110px;
+}
+
+.pageblock {
+    margin-left: 30px;
+}
+
+#pagebutton1 {
+    margin-top: 60px;
+    margin-bottom: -15px;
+}
+
+#bidform {
+    padding-left: 12px;
+}
+
+#comment_section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.comment {
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+input.comment {
+    display: block;
+    margin-top: 2px;
+}
+
+.acomment {
+    border-left: 4px double rgb(153, 200, 245);
+    padding: 5px 30px 1px;
+    margin-bottom: 24px;
+}
+
+#comment_user {
+    display: inline;
+    font-style: italic;
+}
+
+#comment_datetime {
+    color: rgb(112, 112, 112);
+    font-style: italic;
+}
+
+#comment {
+    margin-top: 4px;
+}

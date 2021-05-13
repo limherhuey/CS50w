@@ -1,0 +1,63 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+{% if listing.image %}
+<img class="page" src="{{ listing.image.url }}" alt="{{ listing.name }}">
+{% endif %}
+<div class="text pageblock">
+    <h2>{{ listing.name }}</h2>
+    <div id="info">Listed by {{ listing.user }} on {{ listing.datetime }}</div>
+    <div><strong>Price: </strong>${{ current_price }}</div>
+    {% if listing.category != 'N' %}
+        <div>{{ listing.get_category_display }}</div>
+    {% endif %}
+    <p class="description">{{ listing.description }}</p>
+    {% if listing.closed %}
+        <p class="closed">This listing is CLOSED.</p>
+        <p class="closed" id="winner">Winner: {{ winner }}</p>
+    {% endif %}
+</div>
+
+<div class="pageblock">
+    {% if user.is_authenticated and not listing.closed %}
+    <form id="pagebutton1" action="{% url 'listing_page' listing.pk %}" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="buttons" value=1>
+        {% if listing.user == user %}
+        <input type="hidden" name="creator" value="close">
+        <input type="submit" value="Close Auction">
+    </form>
+    {% else %}
+    {% if listing not in user.watchlist.all %}
+    <input type="hidden" name="watcher" value="watch">
+    <input type="submit" value="Add to Watchlist">
+    {% else %}
+    <input type="hidden" name="watcher" value="unwatch">
+    <input type="submit" value="Remove from Watchlist">
+    {% endif %}
+    </form>
+    <form action="{% url 'listing_page' listing.pk %}" method="post">
+        {% csrf_token %}
+        {{ bid_form }}
+        <input type="hidden" name="place_bid" value=1>
+        <input type="submit" value="Bid">
+    </form>
+    {% endif %}
+    <form class="comment" action="{% url 'listing_page' listing.pk %}" method="post">
+        {% csrf_token %}
+        <textarea name="comment" placeholder="Leave a comment..." rows="3" cols="130"></textarea>
+        <input type="submit" class="comment" value="Post Comment">
+    </form>
+    {% endif %}
+</div>
+
+<div class="pageblock" id="comment_section">
+    {% for comment in comments %}
+    <div class="acomment">
+        <h6 id="comment_user">{{ comment.user }}</h6>
+        <span id="comment_datetime">on {{ comment.datetime.date }} at {{ comment.datetime.time }}</span>
+        <p id="comment">{{ comment.comment }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
