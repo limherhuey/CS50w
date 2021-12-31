@@ -12,4 +12,4 @@ This repository contains my solutions to the course's projects. All projects her
 
 * [Project 3: Mail](Project%203/mail/) - [problem description](https://cs50.harvard.edu/web/2020/projects/3/mail/)
 
-* Project 4: Network - [problem description](https://cs50.harvard.edu/web/2020/projects/4/network/)
+* [Project 4: Network](Project%204/network/) - [problem description](https://cs50.harvard.edu/web/2020/projects/4/network/)
