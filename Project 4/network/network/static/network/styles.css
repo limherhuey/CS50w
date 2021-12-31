@@ -1,0 +1,170 @@
+
+.body {
+    margin: 22px;
+}
+
+h2.title {
+    margin-bottom: 20px;
+}
+
+h4.subtitle {
+    margin-top: 60px;
+    margin-bottom: 16px;
+}
+
+/* New post */
+
+#new-post {
+    padding: 25px;
+    margin-bottom: 38px;
+    border: 2px ridge rgb(241, 241, 241);
+    border-radius: 14px;
+}
+
+#post-body {
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+#submit-post {
+    background-color: rgb(37, 148, 148);
+    color: rgb(248, 243, 221);
+    border: 1px solid rgb(37, 148, 148);
+    border-radius: 5px;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#submit-post:hover {
+    background-color: rgb(248, 243, 221);
+    color:rgb(37, 148, 148);
+    box-shadow:0 2px 1px 0 rgb(37, 148, 148);
+}
+
+#submit-post:active {
+    background-color: rgb(37, 148, 148);
+    color: rgb(248, 243, 221);
+}
+
+/* Post block */
+
+.post {
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px dotted rgb(37, 148, 148);
+    border-radius: 14px;
+}
+
+h5.username {
+    margin-bottom: 16px;
+}
+
+a.username {
+    color:rgb(37, 148, 148);
+}
+
+a.username:hover {
+    color:rgb(24, 104, 104);
+    text-decoration: none;
+}
+
+.likes {
+    font-style: italic;
+    color:rgb(165, 29, 29)
+}
+
+.like-post {
+    background-color: rgb(204, 52, 52);
+    color: rgb(248, 243, 221);
+    border: 1px solid rgb(204, 52, 52);
+    border-radius: 5px;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+}
+
+.like-post:hover {
+    background-color: rgb(248, 243, 221);
+    color:rgb(204, 52, 52);
+    box-shadow:0 2px 1px 0 rgb(204, 52, 52);
+}
+
+.like-post:active {
+    background-color: rgb(204, 52, 52);
+    color: rgb(248, 243, 221);
+}
+
+#edit-post {
+    background-color: rgb(37, 148, 148);
+    color: rgb(248, 243, 221);
+    border: 1px solid rgb(37, 148, 148);
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#edit-post:hover {
+    background-color: rgb(248, 243, 221);
+    color:rgb(37, 148, 148);
+    box-shadow:0 2px 1px 0 rgb(37, 148, 148);
+}
+
+#submit-edit {
+    background-color: rgb(37, 148, 148);
+    color: rgb(248, 243, 221);
+    border: 1px solid rgb(37, 148, 148);
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+#submit-edit:hover {
+    background-color: rgb(248, 243, 221);
+    color:rgb(37, 148, 148);
+    box-shadow:0 2px 1px 0 rgb(37, 148, 148);
+}
+
+.timestamp {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    color: rgb(158, 158, 158);
+    font-size: 14.5px;
+}
+
+/* Following and Followers */
+.follow-stats {
+    margin-bottom: 20px;
+    color:rgb(24, 104, 104);
+}
+
+.follow {
+    margin-right: 12px;
+    margin-left: 8px;
+}
+
+#follow-button {
+    background-color: rgb(204, 52, 52);
+    color: rgb(248, 243, 221);
+    border: 1px solid rgb(204, 52, 52);
+    border-radius: 5px;
+    padding: 4px;
+    padding-left: 37px;
+    padding-right: 37px;
+    margin-left: 3px;
+}
+
+#follow-button:hover {
+    background-color: rgb(248, 243, 221);
+    color:rgb(204, 52, 52);
+    box-shadow:0 2px 1px 0 rgb(204, 52, 52);
+}
+
+#follow-button:active {
+    background-color: rgb(204, 52, 52);
+    color: rgb(248, 243, 221);
+}
